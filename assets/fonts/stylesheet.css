@@ -159,3 +159,21 @@
     font-style: italic;
     font-display: swap;
 }
+
+@font-face {
+    font-family: "Lato";
+    src: url("Lato/Lato-Black.woff2") format("woff2"),
+        url("Lato/Lato-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("Lato/Lato-Bold.woff2") format("woff2"),
+        url("Lato/Lato-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
