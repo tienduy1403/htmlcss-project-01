@@ -15,6 +15,11 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 /* Comon  */
 
 .content {
@@ -47,10 +52,12 @@ a {
 
 /* Header */
 
-header {
-    position: relative;
+.header-sticky {
+    position: sticky;
+    top: -26px;
+    z-index: 1;
     background-color: #e6f0ff;
-    height: 100vh;
+    padding-top: 26px;
 }
 
 /* =============== Navbar ================ */
@@ -58,7 +65,7 @@ header {
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 12px 0;
 }
 
 .navbar .logo {
@@ -114,10 +121,16 @@ header {
 }
 
 /* ================= Hero ================== */
+.hero-wrap {
+    position: relative;
+    display: flex;
+    background-color: #e6f0ff;
+    height: calc(100vh - 90px);
+}
 
 .hero {
     display: flex;
-    margin-top: 130px;
+    margin-top: 118px;
 }
 
 .hero .hero-info {
