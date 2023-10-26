@@ -124,13 +124,13 @@ a {
 .hero-wrap {
     position: relative;
     display: flex;
+    align-items: center;
     background-color: #e6f0ff;
     height: calc(100vh - 90px);
 }
 
 .hero {
     display: flex;
-    margin-top: 118px;
 }
 
 .hero .hero-info {
