@@ -1,0 +1,137 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .header-mobile {
+        display: none;
+    }
+
+    .mobile-navigation .nav-mobile {
+        display: none;
+    }
+}
+
+/* Tablet+mobile */
+@media screen and (max-width: 991px) {
+    .header-sticky {
+        top: -10px;
+        padding-top: 10px;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .toggle-icon {
+        width: 25px;
+        color: #000228;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .navbar .navigation {
+        display: none;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s ease;
+    }
+
+    .drawer-menu {
+        padding: 30px;
+        position: fixed;
+        inset: 0 25% 0 0;
+        background: #fff;
+        z-index: 2;
+        translate: -100% 0;
+        transition: 0.5s ease;
+    }
+
+    .header-mobile input[type="checkbox"]:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header-mobile input[type="checkbox"]:checked ~ .drawer-menu {
+        translate: 0 0;
+    }
+
+    .mobile-navigation {
+        margin-top: 30px;
+    }
+
+    .mobile-navigation .nav {
+        padding: 15px 0;
+        display: block;
+        color: #4f5361;
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    .hero .hero-img {
+        display: none;
+    }
+
+    .hero .hero-info {
+        margin-top: -50px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero .title {
+        margin: 50px auto 0;
+        width: 80%;
+    }
+
+    .hero .desc {
+        margin: 50px auto 0;
+        width: 70%;
+    }
+
+    .hero .hero-btn {
+        margin-top: 70px;
+        padding: 0;
+        height: 70px;
+        line-height: 70px;
+    }
+
+    .clients .logos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .mobile-navigation .nav-mobile {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .navbar .action {
+        display: none;
+    }
+
+    .drawer-menu {
+        inset: 0 20% 0 0;
+    }
+
+    .seperate {
+        margin: 12px 0;
+        width: 100%;
+        height: 2px;
+        border-radius: 1px;
+        background: #636775;
+    }
+}
